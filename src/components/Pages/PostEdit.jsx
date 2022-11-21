@@ -30,7 +30,7 @@ const PostEdit = (props) => {
                 key={nanoid(5)}
                 text={"Х"}
                 type={props.type + "-header__btn-close"}
-                url={`/posts/${params.id}`}
+                url={`ra-router-crud/posts/${params.id}`}
               />
             </div>
 

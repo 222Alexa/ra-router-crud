@@ -17,7 +17,7 @@ const PostsList = () => {
         {data &&
           data.map((item) => {
             return (
-              <Link key={nanoid(5)} to={`/posts/${item.id}`}>
+              <Link key={nanoid(5)} to={`ra-router-crud/posts/${item.id}`}>
                 <Li key={nanoid(8)} className="posts-list">
                   <Post key={nanoid(8)} {...item} className="post" />
                 </Li>

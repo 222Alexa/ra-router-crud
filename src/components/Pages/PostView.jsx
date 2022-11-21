@@ -37,7 +37,7 @@ const PostsView = (props) => {
             key={nanoid(5)}
             text={"Х"}
             type={props.type + "-header__btn-close"}
-            url={"/"}
+            url={"ra-router-crud/"}
           />
 
           <div key={nanoid(5)} className={props.type + "-view__content"}>
@@ -45,7 +45,7 @@ const PostsView = (props) => {
             <div className={props.type + "-btns__block"}>
               <Link
                 key={nanoid(5)}
-                to={`/posts/${params.id}/edit`}
+                to={`ra-router-crud/posts/${params.id}/edit`}
                 className={props.type + "-link"}
               >
                 <Button
@@ -60,7 +60,7 @@ const PostsView = (props) => {
                 type={props.type + "__btn-remove"}
                 clickHandler={() => {
                   onClickDelete(params.id);
-                  navigate("/");
+                  navigate("ra-router-crud/");
                 }}
               />
             </div>
