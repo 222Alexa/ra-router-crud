@@ -37,7 +37,7 @@ const PostsNew = (props) => {
             key={nanoid(5)}
             text={"Х"}
             type={props.type + "-header__btn-close"}
-            url={"/"}
+            url={"/ra-router-crud"}
           />
         </div>
         <div key={nanoid(5)} className={props.type +"__content"}>

@@ -26,27 +26,27 @@ function App() {
           <Routes>
             <Route
               exact
-              path="ra-router-crud/"
+              path="/ra-router-crud/"
               element={
                 <PostsList key={nanoid(8)} className={"posts"}></PostsList>
               }
             />
 
             <Route
-              path="ra-router-crud/posts/:id"
+              path="/ra-router-crud/posts/:id"
               element={<PostsView key={nanoid(8)} type={"post-view"} />}
             ></Route>
             <Route
-              path="ra-router-crud/posts/:id/edit"
+              path="/ra-router-crud/posts/:id/edit"
               element={<PostEdit key={nanoid(8)} type={"post-edit"} />}
             />
             <Route
-              path="ra-router-crud/posts/new"
+              path="/ra-router-crud/posts/new"
               element={<PostsNew key={nanoid(8)} type={"post-new"} />}
             />
 
             <Route
-              path="ra-router-crud/*"
+              path="/ra-router-crud/*"
               element={
                 <>
                   <Error key={nanoid(8)} message={"Page not found"} />
