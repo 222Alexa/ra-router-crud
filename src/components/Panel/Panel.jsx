@@ -11,7 +11,7 @@ export default function Panel() {
   return (
     <React.Fragment>
       <div className="panel-header">
-        <NavLink to="/posts/new" className={"create-post-link"}>
+        <NavLink to="/ra-router-crud/posts/new" className={"create-post-link"}>
           Создать пост
         </NavLink>
       </div>

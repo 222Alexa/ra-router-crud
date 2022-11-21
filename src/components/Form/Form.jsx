@@ -41,7 +41,7 @@ const Form = (data) => {
       : content;
     context.handleAdd(data);
     inputRef.current.value = "";
-    navigate("/");
+    navigate("/ra-router-crud");
   };
 
   const handleInput = (event) => {
